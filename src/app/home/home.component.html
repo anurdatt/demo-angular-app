@@ -1,0 +1,7 @@
+<p>
+  <a
+    routerLink="/notes/note-list"
+    *ngIf="(authStateService.authState$ | async)?.isAuthenticated"
+    >View Notes</a
+  >
+</p>
